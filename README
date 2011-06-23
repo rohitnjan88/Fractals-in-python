@@ -1,1 +1,4 @@
 Simple Fractal Designs in Python.
+
+Koch-Snowflake - a simple Fractal design
+Python gui library 'tk-inter' is used for the visualization purpose.
