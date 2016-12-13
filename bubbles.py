@@ -1,6 +1,6 @@
 
 from picture import *
-""" Thia program recursively draws bubbles on a size by size canvas, given a depth d."""
+""" This program recursively draws bubbles on a size by size canvas, given a depth d."""
 def circle(pic,x,y,r):
   """ First, the thickness of the circles is set to zero. The circle fill-in color is set to blue.
   This function draws a circle with a given radius r, and center points (x,y)"""
@@ -13,7 +13,8 @@ def circle(pic,x,y,r):
    
 def bubbles(pic,x,y,d,r):
   """if the depth is less than 1, do nothing.
-  Otherwise, draw the bubbles recursively, with depths always decreasing by 1."""
+  Otherwise, draw the bubbles recursively, with depths always decreasing by 1.
+  The circles are drawn on the four cardinal points of the middle circle, hence the 4 recursive calls."""
   
     if d > 1:
         bubbles(pic,x-r,y-r,d-1,r/2)
